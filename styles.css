@@ -46,12 +46,14 @@ a {
 }
 
 section {
-  margin: 40px 5px;
   width: 100%;
-  max-width: 1200px
+  max-width: 1200px;
+  margin: 0 0 50px;
 }
 
 #mission {
+  position: relative;
+  top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,7 +89,7 @@ section {
 }
 
 figure {
-  margin: 10px
+  margin: 10px;
 }
 
 img {
@@ -105,7 +107,7 @@ figcaption {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
+  height: auto;
 }
 
 .address-wrap {
@@ -123,12 +125,68 @@ figcaption {
   justify-content: center;
   height: 300px;
   width: 300px;
-  margin: 15px 20px;
+  margin: 15px 20px 40px;
   opacity: 1; 
   background-color: black;
+  border-radius: 20px;
 }
 
 #loca {
   position: relative;
   top: 30px;
+}
+
+footer {
+  width: 100%;
+}
+
+footer h5 {
+  float: left;
+  margin: 20px;
+}
+@media only screen and (max-width: 587px) {
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: auto;
+  }
+
+  #logo {
+    height: 70px;
+    width: auto;
+    margin: 0px;
+  }
+
+  ul {
+    margin: 5px 0 22px;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  figure { 
+    width: 75%;
+    height: auto;
+  }
+  
+  figure img { 
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .address-wrap {
+    display: block;
+  }
+
+  .address {
+    position: relative;
+    margin: 50px auto;
+    width: 70%;
+  }
+
+  #loca {
+    font-size: 2em;
+  }
 }
