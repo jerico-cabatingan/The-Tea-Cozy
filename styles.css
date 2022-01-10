@@ -153,13 +153,22 @@ footer h5 {
   }
 
   #logo {
-    height: 70px;
+    height: 50px;
     width: auto;
-    margin: 0px;
+    margin: 7px 0 0;
   }
 
   ul {
-    margin: 5px 0 22px;
+    padding: 0px;
+    margin: 2px 0 10px;
+  }
+
+  li {
+    font-size: 0.6em;
+  }
+
+  .address p {
+    font-size: 0.8em;
   }
 }
 
@@ -188,5 +197,13 @@ footer h5 {
 
   #loca {
     font-size: 2em;
+  }
+
+  h4 {
+    font-size: 0.7em;
+  }
+
+  figcaption {
+    font-size: 0.8em;
   }
 }
