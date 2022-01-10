@@ -9,68 +9,80 @@
 
   <body>
     <header>
-      <img src="logo.png" alt="Tea Cozy">
+      <img id = "logo" src="logo.png" alt="Tea Cozy">
       <nav>
         <ul>
-          <li>Mission</li>
-          <li>Featured Tea</li>
-          <li>Locations</li>
+          <li><a href = "#mission">Mission</a></li>
+          <li><a href = "#featured">Featured Tea</a></li>
+          <li><a href = "#locations">Locations</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class = "mission">
-        <h2>Our Mission</h2>
-        <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+      <section id = "mission">
+        <div>
+          <h2 class = "statement">Our Mission</h2>
+          <h4 class = "statement">Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+        </div>
       </section>
 
-      <section class = "featured">
+      <section id = "featured">
         <h2>Tea of the Month</h2>
         <h4>What's Steeping at The Tea Cozy?</h4>
-        <figure>
-          <img src="berry-blitz.jpg" alt="Fall Berry Blitz Tea">
-          <h4>Fall Berry Blitz Tea</h4>
-        </figure>
-        <figure>
-          <img src="spiced-rum.jpg" alt="Spiced Rum Tea">
-          <h4>Spiced Rum Tea</h4>
-        </figure>
-        <figure>
-          <img src="donut.jpg" alt="Seasonal Donuts">
-          <h4>Seasonal Donuts</h4>
-        </figure>
-        <figure>
-          <img src="myrtle-ave.jpg" alt="Myrtle Ave Tea">
-          <h4>Myrtle Ave Tea</h4>
-        </figure>
-        <figure>
-          <img src="bedford-bizarre.jpg" alt="Bedford Bizarre Tea">
-          <h4>Bedford Bizarre Tea</h4>
-        </figure>
+
+        <div class = "wrapper">
+          <figure>
+            <img src="berry-blitz.jpg" alt="Fall Berry Blitz Tea">
+            <figcaption>Fall Berry Blitz Tea</figcaption>
+          </figure>
+
+          <figure>
+            <img src="spiced-rum.jpg" alt="Spiced Rum Tea">
+            <figcaption>Spiced Rum Tea</figcaption>
+          </figure>
+
+          <figure>
+            <img src="donut.jpg" alt="Seasonal Donuts">
+            <figcaption>Seasonal Donuts</figcaption>
+          </figure>
+
+          <figure>
+            <img src="myrtle-ave.jpg" alt="Myrtle Ave Tea">
+            <figcaption>Myrtle Ave Tea</figcaption>
+          </figure>
+
+          <figure>
+            <img src="bedford-bizarre.jpg" alt="Bedford Bizarre Tea">
+            <figcaption>Bedford Bizarre Tea</figcaption>
+          </figure>
+        </div>
       </section>
 
-      <section class = "locations">
-        <h2>Locations</h2>
-        <div id = "downtown">
-          <h3 class ="bold">Downtown</h3>
-          <h3>384 West 4th St</h3>
-          <h3>Suite 108</h3>
-          <h3>Portland, Maine</h3>
-        </div>
+      <section id = "locations">
+        <h2 id = "loca">Locations</h2>
+        
+        <div class = "address-wrap">
+          <div class = "address">
+            <h3>Downtown</h3>
+            <p>384 West 4th St</p>
+            <p>Suite 108</p>
+            <p>Portland, Maine</p>
+          </div>
 
-        <div id = "east-bayside">
-          <h3 class ="bold">East Bayside</h3>
-          <h3>3433 Phisherman's Avenue</h3>
-          <h3>(Northwest Corner</h3>
-          <h3>Portland, Maine</h3>
-        </div>
+          <div class = "address">
+            <h3>East Bayside</h3>
+            <p>3433 Phisherman's Avenue</p>
+            <p>(Northwest Corner)</p>
+            <p>Portland, Maine</p>
+          </div>
 
-        <div id = "oakdale">
-          <h3 class ="bold">Oakdale</h3>
-          <h3>515 Crescent Avenue</h3>
-          <h3>Second Floor</h3>
-          <h3>Portland, Maine</h3>
+          <div class = "address">
+            <h3>Oakdale</h3>
+            <p>515 Crescent Avenue</p>
+            <p>Second Floor</p>
+            <p>Portland, Maine</p>
+          </div>
         </div>
       </section>
 

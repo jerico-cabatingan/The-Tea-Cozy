@@ -1,4 +1,4 @@
-* {
+main, body, footer {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
@@ -7,10 +7,54 @@
   text-align: center;
 }
 
-
-
-.mission {
+main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+  display: block;
+  width: 100%;
+  top: 0px;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+}
+
+#logo {
+  height: 50px;
+  float: left;
+  width: auto;
+  margin: 10px;
+}
+
+nav {
+  float: right;
+}
+
+li {
+  display: inline-block;
+  text-decoration: underline;
+  margin: 0 10px;
+}
+
+a {
+  color: grey;
+}
+
+section {
+  margin: 40px 5px;
+  width: 100%;
+  max-width: 1200px
+}
+
+#mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: url("background.jpg");
   background-size: cover;
   background-position: center;
@@ -19,12 +63,72 @@
   height: 700px;
 }
 
-.locations {
+.statement {
+  margin : 10px 0px;
+}
+
+#mission div {
+  background-color: black;
+  margin: 0px;
+  width: 100%;
+}
+
+#featured {
+  display: block; 
+  max-width: 1000px;
+  align-items: center;
+}
+
+.wrapper {
   display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+figure {
+  margin: 10px
+}
+
+img {
+  height: 200px;
+  width: 300px;
+  opacity: 1;
+}
+
+figcaption {
+  margin: 10px;
+}
+
+#locations {
   background-image: url("locations.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 1200px;
   height: 500px;
+}
+
+.address-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  margin: 15px 20px;
+  opacity: 1; 
+  background-color: black;
+}
+
+#loca {
+  position: relative;
+  top: 30px;
 }
