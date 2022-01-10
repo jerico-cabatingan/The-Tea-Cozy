@@ -147,15 +147,14 @@ footer h5 {
 @media only screen and (max-width: 587px) {
   header {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: column nowrap;
     height: auto;
   }
 
   #logo {
     height: 50px;
     width: auto;
-    margin: 7px 0 0;
+    margin: 7px auto 0;
   }
 
   ul {
